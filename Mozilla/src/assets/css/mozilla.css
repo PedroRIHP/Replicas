@@ -1,0 +1,46 @@
+
+.contenedor_padre{}
+
+.ajustes{
+    width: 30px;
+    height: 30px;
+    
+    background-color: blue;/* quitar al final */
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: auto;
+
+    display: flex;
+    justify-content: center;
+}
+.ajustes button {
+    /* primero dimension y ubicacion */   
+    width: 100%;
+    height: 100%;
+   
+   /* despues los interiores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+
+    /* despues el maquillaje */
+    border-style: hidden;
+    cursor: pointer;
+    
+
+}
+
+.mozilla_logo{}
+
+.buscador{}
+
+.buscador_logo{}
+
+.bloque{}
+.bloque button{}
+.bloque div{}
+.bloque p{}
+
+
