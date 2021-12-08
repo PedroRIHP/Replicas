@@ -6,7 +6,60 @@
         <link rel="stylesheet" href="./assets/css/mozilla.css"> <!-- linkeo de hoja de estilos css -->
     </head>
     <body>
-        <button class="ajustes"> 
+        
+        <div class="menu_ajustes_contenedor" id="menu_ajustes">
+
+            <button id="cerrar_ajustes">Cerrar</button>
+
+            <div class="contenedor_con_switch">
+                <h4>Accesos directos
+                    <div class="switch_contenedor">
+                        <input type="checkbox" id="switch">
+                        <label class="switch" for="switch"></label>
+                    </div> 
+                </h4>
+                 <p>sitios que guardas o visitas</p>
+            </div>
+
+            <div class="selector_filas" id="selector_filas">
+                 
+                 <select name="nunero-filas" id="select">
+                     <option value="1">1 Fila</option>
+                     <option value="2">2 Filas</option>
+                     <option value="3">3 Filas</option>
+                     <option value="4">4 Filas</option>
+                 </select>
+                 <div>
+                 <input type="checkbox" id="A">
+                <label for="A">Acccesos directos patrocinados</label>
+                 </div>
+            </div>
+
+            <div class="contenedor_con_switch">
+                 <h4>Actividad reciente
+                    <div class="switch_contenedor2">
+                        <input type="checkbox" id="switch2">
+                        <label class="switch2" for="switch2"></label>
+                    </div>
+                 </h4> 
+                 <p>sitios que guardas o visitas</p>
+            </div>
+
+            <div class="menu_separador"></div>
+
+            <div class="link_mas_ajustes">
+                <a href="pendiente">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/settings--v1.png"/>
+                    <span>Administrar mas ajustes</span>
+                </a> 
+
+            </div>
+
+        </div>
+           
+
+
+        <button class="ajustes" id="abrir_ajustes"> 
             <img src="https://img.icons8.com/material-outlined/24/000000/settings--v1.png"/>
         </button>
             
@@ -21,7 +74,7 @@
             <input class="buscador_barra_input" type="search" placeholder=" Buscar con wakuba o introducir una direccion web">                
         </section>
             
-        <section class="contenedor_links_paginas">
+        <section class="contenedor_links_paginas" id="links_paginas_contenedor">
 
             <!-- Link para amazon -->
 
@@ -236,9 +289,756 @@
                 </a>
 
             </section>
+
+            <!------ segunda fila links paginas -->
+
+             
+        <section class="contenedor_links_paginas" id="links_paginas_contenedor2">
+
+            <!-- Link para amazon -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.amazon.com.mx">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/amazon.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Amazon</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para youtube -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.youtube.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Youtube</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para discord -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://discord.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/discord-logo.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Discord</span>
+                </a>
+
+            </div>
+
+            <!-- Link para Github -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://github.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/fluency/48/000000/github.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Github</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para airbnb -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.airbnb.mx/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/airbnb.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Airbnb</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para gmail  -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://mail.google.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Gmail</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para spotify -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.spotify.com/mx/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/fluency/48/000000/spotify.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Spotify</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para apple -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.apple.com/mx/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Apple</span>
+                </a>
+
+            </section>
+
+<!------ tercera fila para links paginas ------>
+        <section class="contenedor_links_paginas" id="links_paginas_contenedor3">
+
+        <!-- Link para amazon -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://www.amazon.com.mx">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/color/48/000000/amazon.png"/>    
+                </div>
+                <span class="links_paginas_texto">Amazon</span>
+            </a>
+
+        </div>
+
+
+        <!-- Link para youtube -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://www.youtube.com/">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>    
+                </div>
+                <span class="links_paginas_texto">Youtube</span>
+            </a>
+        </div>
+
+        <!-- Link para discord -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://discord.com/">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/color/48/000000/discord-logo.png"/>    
+                </div>
+                <span class="links_paginas_texto">Discord</span>
+            </a>
+
+        </div>
+
+        <!-- Link para Github -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://github.com/">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/fluency/48/000000/github.png"/>    
+                </div>
+                <span class="links_paginas_texto">Github</span>
+            </a>
+
+        </div>
+
+
+        <!-- Link para airbnb -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://www.airbnb.mx/">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/color/48/000000/airbnb.png"/>    
+                </div>
+                <span class="links_paginas_texto">Airbnb</span>
+            </a>
+
+        </div>
+
+
+        <!-- Link para gmail  -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://mail.google.com/">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>    
+                </div>
+                <span class="links_paginas_texto">Gmail</span>
+            </a>
+
+        </div>
+
+
+        <!-- Link para spotify -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://www.spotify.com/mx/">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/fluency/48/000000/spotify.png"/>    
+                </div>
+                <span class="links_paginas_texto">Spotify</span>
+            </a>
+
+        </div>
+
+
+        <!-- Link para apple -->
+
+        <div class="links_paginas">
+
+            <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                <div class="menu_puntos" id="menu_puntos_mostrar">
+                    <div class="menu_columna">Anclar</div>
+                    <div class="menu_columna">Editar</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Abrir en una nueva ventana</div>
+                    <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                    <div class="menu_separador"></div>
+                    <div class="menu_columna">Descartar</div>
+                    <div class="menu_columna">Eliminar del historial</div>        
+                </div>
+            </button>
+
+            <a href="https://www.apple.com/mx/">
+                <div class="links_paginas_logo"> 
+                    <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png"/>    
+                </div>
+                <span class="links_paginas_texto">Apple</span>
+            </a>
+
+        </section>
+<!------ cuarta fila para links paginas ------> 
+        <section class="contenedor_links_paginas" id="links_paginas_contenedor4">
+
+            <!-- Link para amazon -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.amazon.com.mx">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/amazon.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Amazon</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para youtube -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.youtube.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Youtube</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para discord -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://discord.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/discord-logo.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Discord</span>
+                </a>
+
+            </div>
+
+            <!-- Link para Github -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://github.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/fluency/48/000000/github.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Github</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para airbnb -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.airbnb.mx/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/airbnb.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Airbnb</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para gmail  -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://mail.google.com/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Gmail</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para spotify -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.spotify.com/mx/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/fluency/48/000000/spotify.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Spotify</span>
+                </a>
+
+            </div>
+
+            
+            <!-- Link para apple -->
+
+            <div class="links_paginas">
+
+                <button id="menu_puntos"> <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                    <div class="menu_puntos" id="menu_puntos_mostrar">
+                        <div class="menu_columna">Anclar</div>
+                        <div class="menu_columna">Editar</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Abrir en una nueva ventana</div>
+                        <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                        <div class="menu_separador"></div>
+                        <div class="menu_columna">Descartar</div>
+                        <div class="menu_columna">Eliminar del historial</div>        
+                    </div>
+                </button>
+
+                <a href="https://www.apple.com/mx/">
+                    <div class="links_paginas_logo"> 
+                        <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png"/>    
+                    </div>
+                    <span class="links_paginas_texto">Apple</span>
+                </a>
+
+            </section>
+
+            <!------ seccion de las cards con links de paginas recientes ------>
+            <section class="contenedor_actividad_reciente" id="actividad_reciente">
+
+                <h4>Actividad reciente</h4>
+
+                <div class="contenedor_cards">
+
+                   <!--  card de facebook -->
+                    <div class="card_bloque">
+
+                        <button class="card_bloque_menu" id="menu_puntos_card">
+                            <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                        </button>
+
+                        <div class="menu_puntos" id="abrir_menu_card">
+                            <div class="menu_columna">Marcador</div>
+                            <div class="menu_columna">Guardar en pocket</div>
+                            <div class="menu_separador"></div>
+                            <div class="menu_columna">Abrir en una nueva ventana</div>
+                            <div class="menu_columna">Abrir en una nueva ventana privada</div>
+                            <div class="menu_separador"></div>
+                            <div class="menu_columna">Descartar</div>
+                            <div class="menu_columna">Eliminar del historial</div>      
+                        </div>
+
+                        <a href="https://www.facebook.com/">
+                            <div class="card_bloque_imagen"><img src="./assets/img/facebok.jpg"></div>
+                            <div class="reloj">
+                                <img src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png"/>
+                            </div>
+                            <div class="card_bloque_texto">
+                                <span>Facebook</span>
+                                <div>Facebook | Inicia sesion o crea una cuenta</div>
+                            </div>
+                        </a>
+                    </div>
+
+                     <!--  card de xbox -->
+                     <div class="card_bloque">
+                        <button class="card_bloque_menu">
+                            <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                        </button>
+                        <a href="https://www.xbox.com/es-MX/">
+                            <div class="card_bloque_imagen"><img src="./assets/img/xbox.png"></div>
+                            <div class="reloj">
+                                <img src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png"/>
+                            </div>
+                            <div class="card_bloque_texto">
+                                <span>Xbox</span>
+                                <div>Xbox | Game pass ultimate</div>
+                            </div>
+                        </a>
+                    </div>
+
+                     <!--  card de icono8 -->
+                     <div class="card_bloque">
+                        <button class="card_bloque_menu">
+                            <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                        </button>
+                        <a href="https://iconos8.es/">
+                            <div class="card_bloque_imagen"><img src="../src/assets/img/iconos8.JPG"></div>
+                            <div class="reloj">
+                                <img src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png"/>
+                            </div>
+                            <div class="card_bloque_texto">
+                                <span>Icons8</span>
+                                <div>Icons8 | Miles de iconos que podras usar</div>
+                            </div>
+                        </a>
+                    </div>
+
+                     <!--  card de bootstrap -->
+                     <div class="card_bloque">
+                        <button class="card_bloque_menu">
+                            <img src="https://img.icons8.com/material-rounded/24/000000/more.png"/>
+                        </button>
+                        <a href="https://getbootstrap.com/">
+                            <div class="card_bloque_imagen"><img src="./assets/img/bootstrap.jfif" alt=""></div>
+                            <div class="reloj">
+                                <img src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png"/>
+                            </div>
+                            <div class="card_bloque_texto">
+                                <span>Bootstrap</span>
+                                <div>Bootstrap | Build fast, responsive sites with Bootstrap</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+         
         
         <script src="./js/mozilla.js"></script>
     </body>
+
+   
 
 
 </html>

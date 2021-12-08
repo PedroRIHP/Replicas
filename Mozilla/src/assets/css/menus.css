@@ -1,0 +1,106 @@
+/* ------ estilos y posicionamiento para el menu que se desplieqga al clickear el boton ajustes */
+.menu_ajustes_contenedor{
+    margin-inline-end: auto;
+    width: 432px;
+    height: 94%;
+    background-color: white;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2);
+    top: 0px;
+    left: auto;
+    right: 0px;
+    position:absolute;
+    padding: 20px;
+    display: none;
+}
+.menu_ajustes_contenedor button{
+    width: 57px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0px 0px 0px 375px;
+}
+.contenedor_con_switch h4{
+    margin-top: 30px;
+    display: flex;
+    font-size: 16px;
+}
+
+.contenedor_con_switch p{
+    font-size: 14px;
+    margin-top:-10px;
+    
+}
+.switch_contenedor{
+    margin: 0px 12px 0px auto;
+}
+
+.selector_filas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    transition: .2s;
+}
+
+.selector_filas select{
+    width: 118px;
+    height: 31px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-inline-start: 15px;
+}
+.switch_contenedor2{
+    margin: 0px 12px 0px auto;
+}
+.link_mas_ajustes{
+    margin-top: 25px;
+}
+ .link_mas_ajustes a{
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     text-decoration: none;
+     color: black;
+ }
+ .link_mas_ajustes a span:hover{
+    text-decoration: underline;
+ }
+ 
+/* ------ estilos para el menu de 3 puntos en la seccion links paginas ------ */
+.menu_puntos{
+    display: none;
+    position: absolute;
+    width: fit-content;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 16px;
+    padding-bottom: 2px; 
+    text-align: left;
+    margin-top: -15px;
+}
+
+.menu_puntos :hover{
+    background-color: rgba(212, 198, 198, 0.3);
+}
+
+.menu_columna{
+    height: 15px;
+    padding: 7px;
+    cursor: pointer; 
+} 
+
+.menu_separador{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+/* ------ se utilizo el id para posicionar el menu de las cards utilizando los estilos de la calse menu puntos ------ */
+#abrir_menu_card{
+    margin-left: 206px;
+    margin-top: 10px;
+}
+
+
+

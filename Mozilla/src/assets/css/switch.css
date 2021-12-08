@@ -1,0 +1,77 @@
+/* estilos para switch 1 */
+.switch {
+    display: inline-block;
+    width: 26px;
+    height: 16px;
+    background-color: #0061e0;
+    border-radius: 13px;
+    border: 1px solid #0450b4;
+    position: relative;
+    transition: .2s;  
+}
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color:rgb(207, 203, 203);
+    position: absolute; 
+    top: 2px;
+    left:13px;
+    border-radius: 6px  ; 
+    border: 1px solid rgb(122, 118, 118) ;
+    transition: .2s;  
+}
+
+#switch:checked + .switch::after{  
+    left: 1px;
+    background-color:rgb(207, 203, 203, .3);
+}
+#switch:checked + .switch {  
+    background-color:rgba(179, 172, 172, 0.349);
+    border: 1px solid rgb(122, 118, 118) ;
+}
+
+#switch{
+    display: none;
+}
+
+/*----- estilos para switch 2 -----*/
+.switch2 {
+    display: inline-block;
+    width: 26px;
+    height: 16px;
+    background-color:rgb(207, 203, 203, .3);
+    border: 1px solid rgb(122, 118, 118) ;
+    border-radius: 13px;
+    position: relative; 
+    transition: .2s;
+}
+
+.switch2::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color:rgb(207, 203, 203);
+    position: absolute; 
+    top: 2px;
+    left:1px;
+    border-radius: 6px  ; 
+    border: 1px solid rgb(122, 118, 118) ;  
+    transition: .2s;
+}
+
+#switch2:checked + .switch2::after{
+    left: 13px;
+    background-color:(207, 203, 203);
+    border: 1px solid rgb(122, 118, 118);  
+}
+#switch2:checked + .switch2{
+    background-color: #0061e0;
+}
+
+#switch2{
+    display: none;
+}
